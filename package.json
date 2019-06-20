@@ -1,0 +1,73 @@
+{
+  "name": "snippet-vault",
+  "version": "0.1.0",
+  "private": true,
+  "main": "public/electron.js",
+  "description": "handles your snippets",
+  "author": "Señor Developer",
+  "dependencies": {
+    "clipboardy": "^1.2.3",
+    "copy-to-clipboard": "^3.0.8",
+    "electron-is-dev": "^1.0.1",
+    "electron-reload": "^1.4.0",
+    "fast-xml-parser": "^3.12.16",
+    "fuse.js": "^3.4.4",
+    "he": "^1.2.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.6",
+    "react-beautiful-dnd": "^11.0.0",
+    "react-dom": "^16.8.6",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-toastify": "^5.0.0-rc.6",
+    "reduce-reducers": "^1.0.1",
+    "redux": "^4.0.1",
+    "redux-starter-kit": "^0.4.3",
+    "update-electron-app": "^1.3.0",
+    "uuid": "^3.3.2",
+    "wait-on": "^3.2.0"
+  },
+  "scripts": {
+    "dev": "npx react-scripts start",
+    "build": "react-scripts build",
+    "start": "concurrently \"cross-env BROWSER=none npx react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
+    "pack": "electron-builder --dir",
+    "dist": "npx build --x64 --macos --win --linux --c.extraMetadata.main=build/electron.js -p always",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "build --win -c.extraMetadata.main=build/electron.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "electron": "^4.1.3",
+    "electron-builder": "^20.39.0",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.4.1"
+  },
+  "build": {
+    "appId": "com.snippet-vault",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+      ],
+      "directories":{
+      "buildResources": "assets"
+    },	
+    "win": {			
+			"icon": "build/assets/icon.ico"			
+		},	
+	
+    "productName": "Snippet Vault"
+  },  
+  "homepage": "./"
+}

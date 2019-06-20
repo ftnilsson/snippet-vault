@@ -1,0 +1,31 @@
+.resultItem {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  .resultName {
+    flex: 1;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  // .resultData {
+  //   flex: 3;
+  // }
+  .buttonContainer {
+    flex: 1;
+    .CodeIcon {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        stroke: #91127e;
+        transform: scale(1.3);
+      }
+    }
+  }  
+}

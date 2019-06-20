@@ -1,0 +1,28 @@
+.root{
+    width: 90%;
+    padding: 12px 24px;
+
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #fff;
+    background-color: transparent;
+
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    background-position: 100% center;
+
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+
+    &::placeholder {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+}

@@ -1,0 +1,29 @@
+.confirmDialog {
+  background: #fff;
+  color: #333;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* top: 0; */
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  padding: 20px;
+  right: 0;
+  top: 0;
+
+  button {
+    padding: 5px;
+    color: #fff;
+    background: #9a39a3;
+    border: 0;
+    border-radius: 5px;
+    width: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(158, 17, 127, 0.8);
+    }
+  }
+}

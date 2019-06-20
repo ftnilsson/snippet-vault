@@ -1,0 +1,39 @@
+.toolbar {
+  padding: 5px 5px;
+  .redDot {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;    
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #ff5f58;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }    
+  }
+  .yellowDot {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;    
+    border-radius: 50%;
+    display: inline-block;    
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    background-color: #ffbd2e;
+  }
+  .greenDot {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;    
+    border-radius: 50%;
+    display: inline-block;    
+    background-color: #18c132;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }    
+  }
+}

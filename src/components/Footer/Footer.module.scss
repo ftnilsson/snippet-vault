@@ -1,0 +1,198 @@
+.root {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+
+  .build {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.6em;
+    left: 13px;
+  }
+  .system_info {
+    text-align: center;
+    .NodeLogo {
+      width: 45px;
+
+      animation-name: blur;
+      animation-duration: 3000ms;
+      animation-delay: 8s;
+      -webkit-animation-delay: 8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .ReactLogo {
+      width: 30px;
+      height: 30px;
+      .st0 {
+        fill: #00d8ff;
+      }
+
+      -webkit-animation: infinite_spinning 3s ease-in-out 7s infinite;
+      // animation-name: infinite_spinning;
+      // animation-duration: 3000ms;
+      // animation-delay: 8s;
+      // -webkit-animation-delay: 8s;
+      // animation-iteration-count: infinite;
+      // animation-timing-function: ease-in-out;
+    }
+
+    .ElectronLogo {
+      animation-name: bounce;
+      animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      width: 30px;
+      height: 30px;
+      .svgStroke {
+        stroke: #3a585f;
+        stroke-width: 1.2;
+        stroke-linecap: round;
+      }
+
+      .svgFill {
+        fill: #3a585f;
+      }
+    }
+
+    .PlusIcon {
+      width: 20px;
+      height: 20px;
+
+      padding: 4px;
+      fill: #fff;
+      fill-opacity: 1;
+      fill-rule: evenodd;
+      stroke: none;
+      stroke-width: 0.70555556px;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      stroke-opacity: 1;
+    }
+
+    .EqualsIcon {
+      width: 20px;
+      height: 20px;
+
+      padding: 4px;
+      fill: #fff;
+      fill-opacity: 1;
+      fill-rule: evenodd;
+      stroke: none;
+      stroke-width: 0.70555556px;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      stroke-opacity: 1;
+    }
+
+    .HeartIcon {
+      width: 30px;
+      height: 30px;
+
+      fill: #c0392b;
+      animation-name: pulse_animation;
+      animation-duration: 2000ms;
+      transform-origin: 70% 70%;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes pulse_animation {
+      0% {
+        transform: scale(1);
+      }
+      30% {
+        transform: scale(1);
+      }
+      40% {
+        transform: scale(1.13);
+      }
+      50% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1);
+      }
+      70% {
+        transform: scale(1.08);
+      }
+      80% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes infinite_spinning {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: scale(1, 1) translateY(0);
+      }
+      10% {
+        transform: scale(1.1, 0.9) translateY(0);
+      }
+      30% {
+        transform: scale(0.9, 1.1) translateY(-10px);
+      }
+      50% {
+        transform: scale(1.05, 0.95) translateY(0);
+      }
+      57% {
+        transform: scale(1, 1) translateY(-2px);
+      }
+      64% {
+        transform: scale(1, 1) translateY(0);
+      }
+      100% {
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @keyframes blur {
+      0% {
+        -webkit-filter: blur(0px);
+      }
+      50% {
+        -webkit-filter: blur(1px);
+        transform: scale(1.1);
+      }
+      100% {
+        -webkit-filter: blur(0px);
+      }
+    }
+  }
+
+  .settings {
+    position: absolute;
+    bottom: 5px;
+    font-size: 0.6em;
+    right: 5px;
+    z-index: 99;
+  }
+}
+
+.SettingsIcon {
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-top: 5px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    fill: #91127e;
+    transform: scale(1.3);
+  }
+}

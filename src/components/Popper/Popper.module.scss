@@ -1,0 +1,44 @@
+.Popper {
+    // position: absolute;
+    // margin: auto;
+    // bottom: 0;
+    // width: 72vw;
+    // background: #fff;
+    // color: #333;
+    // padding: 2vw;
+    // min-height: 80vh;    
+    // width:76%;
+    // height: auto;
+    // transition: min-height 3s ease-in;
+
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 72vw;
+    background: #fff;
+    color: #333;
+    padding: 2vw;
+    min-height: 80vh;
+    /* width: 76%; */
+    /* height: auto; */
+    transition: min-height 3s ease-in;
+    
+    .CloseIcon{
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #999;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+      transition: all 0.2s ease-in-out;     
+      &:hover {     
+        cursor: pointer;
+        stroke: #91127e;
+        transform: rotate(25deg) scale(1.3);
+      }
+    }
+  }
+
+  
