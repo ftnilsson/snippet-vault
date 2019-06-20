@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to Snippet Vault
 
-You can use the [editor on GitHub](https://github.com/ftnilsson/snippet-vault/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![Image](src)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The only snippet manager you'll ever need ;)
+Markdown is a lightweight and easy-to-use application to manage your snippets
 
-### Markdown
+### Getting started
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+clone the repo (or download an [installer](#downloads))
 
-```markdown
-Syntax highlighted code block
+`cd **clone directory**`
 
-# Header 1
-## Header 2
-### Header 3
+`npm install`
 
-- Bulleted
-- List
+`npm start`
 
-1. Numbered
-2. List
+### Building release
+`npm start`
 
-**Bold** and _Italic_ and `Code` text
+### Downloads
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ftnilsson/snippet-vault/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
