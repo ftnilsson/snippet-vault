@@ -3,7 +3,7 @@
 ![Image](https://github.com/ftnilsson/snippet-vault/blob/master/public/assets/256x256.png)
 
 The only snippet manager you'll ever need ;)
-Markdown is a lightweight and easy-to-use application to manage your snippets, built with electron and reactjs.
+Snippet vault is a lightweight and easy-to-use application to manage your snippets, built with electron and reactjs.
 
 
 ### Getting started
