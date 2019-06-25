@@ -57,9 +57,8 @@ ___
 **/services**
 
   contains functions for fetching, saving updating data
+  
   redux code
-
-
 
 ### Building release
 `npm tbd`
@@ -67,3 +66,47 @@ ___
 ### Downloads
 comming soon
 
+## Usage
+
+### Shortcuts
+ctr/cmd + ⬆ maximize app
+
+ctr/cmd + ⬇ minimize app (still running in the tray)
+
+ctr/cmd + 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣ copy favourite
+
+### Start screen
+![Image](https://github.com/ftnilsson/snippet-vault/blob/master/start.png)
+
+from here you can serach for your snippets.
+
+![Image](https://github.com/ftnilsson/snippet-vault/blob/master/search.png)
+
+view the content of a snippet
+
+![Image](https://github.com/ftnilsson/snippet-vault/blob/master/view.png)
+
+### CRUD snippets
+**C**reate **R**ead **U**pdate **D**elete
+
+using the chevron sign > on the start page you will get to the CRUD screen
+
+![Image](https://github.com/ftnilsson/snippet-vault/blob/master/new.png)
+
+add a new snippet by clicking the large + (plus) button
+
+![Image](https://github.com/ftnilsson/snippet-vault/blob/master/edit.png)
+
+click on the name of the snippet to view/edit it
+
+use drag and drop to reorder snippets or make them a favourite (max 9)
+
+## ToDo
+
+* make short cuts configurable
+* save snippets to cloud
+* more installers (linux, unix, macOs)
+
+## 3rd Party code
+
+tbc
