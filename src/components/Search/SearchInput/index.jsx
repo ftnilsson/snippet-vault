@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {connect} from 'react-redux'
 import styles from "./SearchInput.module.scss";
 import { searchSnippets } from "../../../services/search";

@@ -9,17 +9,26 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import GitHubIcon from "./assets/GitHubIcon";
 import styles from "./App.module.scss";
 
-
 const App = () => {
+
+  const onGitHub = (event) => {
+    //TODO open browser
+    event.preventDefault();
+    console.log('here');
+    let link = 'https://github.com/ftnilsson/snippet-vault';
+    window.require("electron").shell.openExternal(link);
+  };
+
   return (
     <div className="App">
-      <Provider store={store}>
+      <Provider store={store}>      
         <ToastContainer />
         <AppBar></AppBar>
         <Main />
+        <GitHubIcon className={styles.GitHubIcon} onClick={onGitHub} ></GitHubIcon>
       </Provider>
       <Footer />
-      <GitHubIcon className={styles.GitHubIcon}></GitHubIcon>
+      
     </div>
   );
 };

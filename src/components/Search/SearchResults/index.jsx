@@ -7,7 +7,7 @@ import { copyToClipboard } from "../../../services/commands";
 import styles from "./SearchResults.module.scss";
 
 const SearchResults = props => {
-  const { busy, data, copied } = props;
+  const { busy, data } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [popperData, setPopperData] = useState("");
 

@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./DeleteIcon.module.scss";
 
 const DeleteIcon = ({ className }) => {
   return (

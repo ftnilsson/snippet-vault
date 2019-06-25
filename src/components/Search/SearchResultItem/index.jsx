@@ -3,7 +3,7 @@ import CodeIcon from "../../../assets/CodeIcon";
 import styles from "./SearchResultItem.module.scss";
 
 const SearchResultItem = props => {
-    const { index, name, data, handleCopy, handleOpen } = props;
+    const { index, name, handleCopy, handleOpen } = props;
   return (
     <div key={index} className={styles.resultItem}>
       <div className={styles.resultName} onClick={handleCopy}>

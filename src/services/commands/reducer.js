@@ -10,6 +10,7 @@ const copyReducer = createReducer(initialState, {
   [commandActions.copySnippetsSuccess]: (state) => {
     const nextState = state;    
     informationToast(10,"COPIED");
+    return nextState;
   }
 });
 

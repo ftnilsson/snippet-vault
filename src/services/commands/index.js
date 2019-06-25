@@ -5,19 +5,22 @@ const ipcRenderer = window.require("electron").ipcRenderer;
 
 window.onload = () => {
     ipcRenderer.on("copy-reply", (event, args) => {
-        store.dispatch(commandActions.copySnippetsSuccess());  
+        store.dispatch(commandActions.copySnippetsSuccess());
     });
 };
-const copyToClipboard = (data) => {    
+const copyToClipboard = (data) => {
     copy(data);
-    store.dispatch(commandActions.copySnippetsSuccess());    
+    store.dispatch(commandActions.copySnippetsSuccess());
 }
 
 const minimize = () => {
-
+    ipcRenderer.send("minimize-app");
 }
 
 const maximize = () => {
-
+    ipcRenderer.send("maximize-app");
 }
-export {copyToClipboard, minimize, maximize};
+const close = () => {
+    ipcRenderer.send("close-app");
+}
+export { copyToClipboard, minimize, maximize, close };

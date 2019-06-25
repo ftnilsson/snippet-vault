@@ -1,3 +1,10 @@
+ //handle setupevents as quickly as possible 
+ const setupEvents = require('../installers/setupEvents')
+ if (setupEvents.handleSquirrelEvent()) {
+    // squirrel event handled and app will exit in 1000ms, so don't do anything else
+    return;
+ }
+
 const {
   app,
   BrowserWindow,
@@ -113,10 +120,11 @@ function createWindow() {
     });
 
     win.webContents.once("dom-ready", () => {
-      setTimeout(function() {}, 5000);
-      win.show();
-      loading.hide();
-      loading.close();
+      setTimeout(() =>{
+        win.show();
+        loading.hide();
+        loading.close();
+      }, 5000);      
     });
    
     const tray = new Tray(`${__dirname}/assets/16x16.png`);
@@ -171,6 +179,18 @@ function createWindow() {
   );
   loading.show();
 }
+
+ipcMain.on("minimize-app", event => {
+  win.hide();
+})
+
+ipcMain.on("maximize-app", event => {
+  win.show();
+})
+
+ipcMain.on("close-app", event => {
+  app.quit();
+})
 
 ipcMain.on("load-snippets", event => {
   try {
