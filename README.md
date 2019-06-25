@@ -73,7 +73,7 @@ ctr/cmd + ⬆ maximize app
 
 ctr/cmd + ⬇ minimize app (still running in the tray)
 
-ctr/cmd + 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣ copy favourite
+ctr/cmd + 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ copy favourite to clipboard (works even if app is minimized)
 
 ### Start screen
 ![Image](https://github.com/ftnilsson/snippet-vault/blob/master/start.png)
