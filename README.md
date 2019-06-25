@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+## Welcome to Snippet Vault
 
-You can use the [editor on GitHub](https://github.com/ftnilsson/snippet-vault/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![Image](https://github.com/ftnilsson/snippet-vault/blob/master/public/assets/256x256.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The only snippet manager you'll ever need ;)
+Snippet vault is a lightweight and easy-to-use application to manage your snippets, built with electron and reactjs.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Getting started
 
-```markdown
-Syntax highlighted code block
+Clone the repo (or download an [installer](#downloads))
 
-# Header 1
-## Header 2
-### Header 3
+**Requires** : <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" alt="node.js" width="50"> (at least > 10) to be installed  
 
-- Bulleted
-- List
+`cd <clone directory>`
 
-1. Numbered
-2. List
+`npm install`
 
-**Bold** and _Italic_ and `Code` text
+`npm start`
 
-[Link](url) and ![Image](src)
-```
+### Structure
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**note** current version stores all snippets as _xml_ in a local file called _snippets.txt_ located in _public/snippets/snippet.txt_
 
-### Jekyll Themes
+**public** folder contains the static web content, and has the follwing internal structure
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ftnilsson/snippet-vault/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+_electron.js_ has all electron code, for handlling window creation, and global shortcuts.
 
-### Support or Contact
+**/assets**
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  contains images
+  
+**/snippets**
+
+  file for storing snippets
+
+___
+
+**src** folder contains all source code, and has the following internal structure
+
+**/assets**
+
+  contains react components like icons and global styles
+  
+**/components**
+
+  contains react componets for example SearchInput, Popper, SnippetList
+  
+**/pages**
+
+  contains react pages (with 1 or more components)
+  
+**/routes**
+
+  contains react-routing functions
+  
+**/services**
+
+  contains functions for fetching, saving updating data
+  redux code
+
+
+
+### Building release
+`npm tbd`
+
+### Downloads
+comming soon
+
