@@ -13,7 +13,7 @@
     "fast-xml-parser": "^3.12.16",
     "fuse.js": "^3.4.4",
     "he": "^1.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-beautiful-dnd": "^11.0.0",
     "react-dom": "^16.8.6",
