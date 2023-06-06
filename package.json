@@ -10,7 +10,7 @@
     "copy-to-clipboard": "^3.0.8",
     "electron-is-dev": "^1.0.1",
     "electron-reload": "^1.4.0",
-    "fast-xml-parser": "^3.12.16",
+    "fast-xml-parser": "^4.2.4",
     "fuse.js": "^3.4.4",
     "he": "^1.2.0",
     "node-sass": "^4.11.0",
