@@ -13,7 +13,7 @@
     "fast-xml-parser": "^3.12.16",
     "fuse.js": "^3.4.4",
     "he": "^1.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^9.0.0",
     "react": "^16.8.6",
     "react-beautiful-dnd": "^11.0.0",
     "react-dom": "^16.8.6",
@@ -26,7 +26,7 @@
     "redux-starter-kit": "^0.4.3",
     "update-electron-app": "^1.3.0",
     "uuid": "^3.3.2",
-    "wait-on": "^3.2.0"
+    "wait-on": "^7.0.1"
   },
   "scripts": {
     "dev": "npx react-scripts start",
