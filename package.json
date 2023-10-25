@@ -53,7 +53,7 @@
     "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
     "electron": "^22.3.25",
-    "electron-builder": "^20.39.0",
+    "electron-builder": "^24.6.4",
     "electron-winstaller": "^3.0.4",
     "nodemon": "^1.18.10",
     "typescript": "^3.4.1"
